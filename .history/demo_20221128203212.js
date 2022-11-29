@@ -27,7 +27,7 @@ function likeCallback(e) {
       alert("You notified the server!");
       alert(serverMessage);
       heart.innerText = glyphStates[heart.innerText];
-      heart.style.color = colorStates[heart.style.color];
+      // heart.style.color = colorStates[heart.style.color];
     })
     .catch(function(error) {
       alert("Something went wrong!");
@@ -38,9 +38,9 @@ function likeCallback(e) {
 // work, we need to add a click event listener to the elements we identified in
 // STEP 1. That's Pillar 2, event handling. Uncomment this code:
 
-for (const glyph of articleHearts) {
-  glyph.addEventListener("click", likeCallback);
-}
+// for (const glyph of articleHearts) {
+//   glyph.addEventListener("click", likeCallback);
+// }
 
 // STEP 4: 
 
